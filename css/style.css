@@ -52,8 +52,50 @@ header{
     display: none;
 }
 
+    /* MAIN */
 
-    
+    /* SECTION INFO */
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.container .card:first-child{
+    height: 600px;
+}
+
+.card{
+    background-color: rgb(181,221,255);
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+#additional-info{
+    background-color: rgb(151,146,227);
+    height: 500px;
+    width: 100%;
+}
+
+#additional-info .container{
+    height: 100%;
+}
+
+.container article{
+    height: calc(100% / 2);
+    background-color: green;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
 }
 
 
