@@ -7,17 +7,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .flex{
     display: flex;
 }
 
-    /***********************
-    STRUCTURE FOR SMARTPHONE
-    ***********************/
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
 
-@media screen and (max-width: 480px) {
 
     /***********************
             HEADER
@@ -30,34 +32,37 @@ header{
 }
 
 .header-container{
-    width: 90%;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 #logo{
-    height: 100%;
-    width: 100px;
-    background-color: green;
+    height: 40px;
+
 }
 
 #header-menu{
     list-style-type: none;
+    height: 100%;
 }
 
-#header-menu li{
+.general{
     background-color: red;
     height: 100%;
     width: 40px;
 }
 
-#header-menu li:first-child{
-    background-color: blue;
+#open-menu{
+    justify-content: center;
+    align-items: center;
 }
 
-.general{
-    display: none;
+#open-menu i{
+    color: white;
+    font-size: 2rem;
 }
 
 
@@ -65,52 +70,145 @@ header{
 
     /* SECTION INFO */
 
-.container{
-    width: 80%;
-    margin: 0 auto;
-    padding: 40px 0;
-}
-
 .container .card:first-child{
     height: 600px;
+    position: relative;
+    text-align: left;
 }
 
 .card{
     background-color: rgb(181,221,255);
-    height: 300px;
+    width: 100%;
     border-radius: 20px;
-    margin: 20px 0;
+    margin: 10px 0;
+    padding: 30px;
+    text-align: center;
+}
+
+.card h2{
+    color: rgb(0,132,253);
+}
+
+.card p{
+    color: rgb(90,109,126);
+    margin: 30px 0;
+}
+
+.card img{
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card button{
+    background-color: rgb(0,132,253);
+    padding: 10px;
+    border-radius: 20px;
+    width: 180px;
+    border: none;
+}
+
+.card i{
+    color: rgb(0,132,253);
+    font-size: 5rem;
+    margin-bottom: 25px;
 }
 
 #additional-info{
     background-color: rgb(151,146,227);
-    height: 500px;
-    width: 100%;
-}
 
-#additional-info .container{
-    height: 100%;
 }
 
 .container article{
-    height: calc(100% / 2);
-    background-color: green;
     margin: 10px 0;
+}
+
+.container article:last-child{
+    background-color: white;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.container article img{
+    width: 350px;
+}
+
+#additional-info h2{
+    color: white;
+    margin: 30px 0;
+}
+
+#additional-info h3{
+    margin: 20px 0;
+}
+
+#planning1 p{
+    color: white;
+    margin-bottom: 30px;
+}
+
+#additional-info i{
+    color: rgb(151,146,227);
+    font-size: 50px;
+    padding: 20px;
 }
 
 
     /* SECTION TESTIMONIALS */
 
 .testimonials-intro{
-    height: 150px;
-    background-color: green;
+    text-align: center;
+}
+
+.testimonials-intro h2{
+    color: rgb(151,146,227);
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.testimonials-intro p:first-child{
+    text-transform: uppercase;
 }
 
 .testimonial{
-    height: 200px;
     background-color: rgb(151,146,227);
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial img{
+    width: 100%;
+    clip-path: circle();
+}
+
+.testimonial p{
+    color: white;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.testimonial i{
+    font-size: 1rem;
+}
+
+.testimonial h3{
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-weight: 700;
 }
 
 
@@ -123,15 +221,49 @@ header{
 #benefits .container h2{
     text-align: center;
     color: white;
+    font-size: 2rem;
 }
 
 .benefit{
     background-color: white;
-    height: 300px;
     border-radius: 20px;
     margin-top: 30px;
-    padding: 30px 20px;
+    padding: 30px;
 }
+
+.benefit h3, .benefit h4{
+    color: rgb(151,146,227);
+}
+
+.benefit h3{
+    font-size: 3rem;
+}
+
+.benefit h4{
+    font-size: 1.6rem;
+    margin: 20px auto;
+}
+
+.benefit p{
+    color: rgb(150,150,150);
+}
+
+.benefit button{
+    background-color: rgb(151,146,227);
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.benefit button a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 
 
     /* SECTION ABOUT US */
@@ -169,7 +301,68 @@ footer{
     height: 300px;
 }
 
+    /***********************
+    STRUCTURE FOR SMARTPHONE
+    ***********************/
+
+@media screen and (max-width: 480px) {
+    .general{
+        display: none;
+    }
+}
+
+    /***********************
+    STRUCTURE FOR TABLET
+    ***********************/
+
+@media screen and (min-width: 480px){
+    .general{
+        display: none;
+    }
+
+    #info .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .card{
+        height: 600px;
+        width: calc((100% / 3) - 20px);
+    }
+
+    .container .card:nth-child(4){
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container .card:first-child{
+        width: calc((100% / 3) * 2 - 20px);
+        margin-right: 20px;
+    }
+
+
+
+
 }
 
 
+
+
+
+
+
+    /***********************
+    STRUCTURE FOR DESKTOP
+    ***********************/
+
+@media screen and (min-width: 768px){
+    #open-menu{
+        display: none;
+    }
+
+
+
+    
+
+}
 
