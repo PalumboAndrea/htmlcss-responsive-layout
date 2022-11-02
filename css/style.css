@@ -52,12 +52,13 @@ header{
     display: none;
 }
 
+
     /* MAIN */
 
     /* SECTION INFO */
 
 .container{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -90,10 +91,39 @@ header{
 }
 
 
+    /* SECTION TESTIMONIALS */
+
+.testimonials-intro{
+    height: 150px;
+    background-color: green;
+}
+
+.testimonial{
+    height: 200px;
+    background-color: rgb(151,146,227);
+    margin-top: 20px;
+    border-radius: 50px;
+}
 
 
+    /* SECTION BENEFITS */
 
+#benefits{
+    background-color: rgb(151,146,227);
+}
 
+#benefits .container h2{
+    text-align: center;
+    color: white;
+}
+
+.benefit{
+    background-color: white;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 30px 20px;
+}
 
 
 }
