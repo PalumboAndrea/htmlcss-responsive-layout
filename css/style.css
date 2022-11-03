@@ -18,6 +18,7 @@
     width: 80%;
     margin: 0 auto;
     padding: 40px 0;
+    background-color: green;
 }
 
 button{
@@ -26,6 +27,10 @@ button{
 
 button a{
     text-decoration: none;
+}
+
+.margin-left{
+    margin-left: 20px;
 }
 
 
@@ -229,6 +234,7 @@ header{
     text-align: center;
     color: white;
     font-size: 2rem;
+    margin-bottom: 40px;
 }
 
 .benefit{
@@ -407,6 +413,11 @@ footer{
     ***********************/
 
 @media screen and (min-width: 768px){
+
+    .margin-left{
+        margin-left: 20px;
+    }
+
     .general{
         display: none;
     }
@@ -425,17 +436,8 @@ footer{
         width: calc((100% / 3) - 20px);
     }
 
-    .container .card:nth-child(5){
-       margin-left: 20px;
-    }
-
-    .container .card:nth-child(3){
-        margin-right: 20px;
-    }
-
     .container .card:first-child{
-        width: calc((100% / 3) * 2 - 20px);
-        margin-right: 20px;
+        width: calc((100% / 3) * 2);
     }
 
     .card img{
@@ -485,57 +487,86 @@ footer{
 
     /* SECTION BENEFITS */
 
-    #benefits{
-        background-color: rgb(151,146,227);
+    #benefits .container{
+        
     }
 
     #benefits .container h2{
-        text-align: center;
-        color: white;
-        font-size: 2rem;
-    }
-
-    .benefit{
-        background-color: white;
-        border-radius: 20px;
-        margin-top: 30px;
-        padding: 30px;
-    }
-
-    .benefit h3, .benefit h4{
-        color: rgb(151,146,227);
-    }
-
-    .benefit h3{
         font-size: 3rem;
     }
 
-    .benefit h4{
-        font-size: 1.6rem;
-        margin: 20px auto;
+    .benefit-container{
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .benefit p{
-        color: rgb(150,150,150);
-    }
-
-    .button-white-on-violet{
-        background-color: rgb(151,146,227);
-        padding: 10px;
-        border: none;
-        border-radius: 30px;
+    .benefit{
         margin-top: 30px;
+        padding: 30px;
+        width: calc((100% / 2) - 20px);
     }
 
-    .benefit .button-white-on-violet{
-        width: 150px;
+    .margin-right{
+        margin-right: 20px;
     }
 
-    .button-white-on-violet a{
-        color: white;
-        text-decoration: none;
+
+
+    /* SECTION ABOUT US */
+
+    #about-us .container{
+        display: flex;
+    }
+
+    .about-us-description{
+        padding-right: 80px;
+    }
+
+    #about-us h2{
+        font-size: 5.5rem;
+    }
+
+    #about-us p{
+        line-height: 3rem;
+    }
+
+    .employee h4{
+        margin-top: 20px;
+        line-height: 2.5rem;
+    }
+
+    .employee div{
+        width: 100%;
+        position: relative;
+    }
+
+
+    /* SECTION GET STARTED */
+
+    #get-started h5{
+        font-size: 1.5rem;
+    }
+
+    #get-started div p:nth-child(2){
+        font-size: 3rem;
+    }
+
+    #get-started div p:nth-child(3){
+        font-size: 6rem;
+    }
+
+    #get-started div p:nth-child(4){
         font-size: 1.2rem;
-        font-weight: 700;
+    }
+
+    #get-started button{
+        padding: 30px 40px;
+        border-radius: 100px;
+        width: 300px;
+    }
+
+    #get-started button a{
+        font-size: 1.6rem;
     }
 
 
