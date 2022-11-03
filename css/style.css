@@ -73,6 +73,16 @@ li a{
     margin-right: 20px;
 }
 
+li button a{
+    color: black;
+    margin: 0;
+}
+
+li button{
+    padding: 10px;
+    border-radius: 20px;
+}
+
 #header-menu{
     list-style-type: none;
     height: 100%;
@@ -681,6 +691,5 @@ footer{
     }
 
     
-
 }
 
