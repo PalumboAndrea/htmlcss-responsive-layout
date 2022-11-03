@@ -55,9 +55,22 @@ header{
     align-items: center;
 }
 
+.header-container ul{
+    align-items: center;
+}
+
 #logo{
     height: 40px;
+}
 
+.general{
+    display: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
 }
 
 #header-menu{
@@ -99,6 +112,14 @@ header{
     margin: 10px 0;
     padding: 30px;
     text-align: center;
+}
+
+.card img{
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .card h2{
@@ -388,29 +409,6 @@ footer{
 
 
 
-
-
-
-    /***********************
-    STRUCTURE FOR SMARTPHONE
-    ***********************/
-
-@media screen and (max-width: 768px) {
-    .general{
-        display: none;
-    }
-
-    .card img{
-        height: 300px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%);
-    }
-}
-
-
-
     /***********************
     STRUCTURE FOR TABLET
     ***********************/
@@ -587,8 +585,11 @@ footer{
         display: none;
     }
 
-    /* SECTION INFO */
+    .general{
+        display: block;
+    }
 
+    /* SECTION INFO */
 
     #info .container{
         display: flex;
@@ -604,7 +605,11 @@ footer{
     }
 
     .card div{
-        width: 60%;
+        width: 50%;
+    }
+
+    #photo{
+        position: relative;
     }
 
     .container .card{
@@ -613,16 +618,13 @@ footer{
     }
 
     .card img{
-        height: 300px;
-        position: static;
-        bottom: 0;
-        
-        
-        
+        height: 250px;
+        position: absolute;
+        bottom: -15px;
+        right: 20px;
+        transform: none;
+        left: auto;
     }
-    
-   
-    
 
     #additional-info .container{
         width: 60%;
